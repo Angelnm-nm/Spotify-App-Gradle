@@ -23,6 +23,8 @@ public class AuthorMemLocalDataSource {
     public ArrayList<Author> findAll() {
         return authorsMemStorage;
     }
-
+    public void save(Author author) {
+        authorsMemStorage.add(author);
+    }
 
 }
