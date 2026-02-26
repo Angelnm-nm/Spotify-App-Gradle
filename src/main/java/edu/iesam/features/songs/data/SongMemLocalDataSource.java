@@ -1,5 +1,6 @@
 package edu.iesam.features.songs.data;
 
+import edu.iesam.features.authors.domain.Author;
 import edu.iesam.features.songs.domain.Song;
 
 import java.util.ArrayList;
@@ -14,10 +15,10 @@ public class SongMemLocalDataSource {
     }
 
     public void initData() {
-        Song song1 = new Song();
+        Song song1 = new Song("1:00","jefe","La mafia del amor", "1:00");
         songsMemStorage.add(song1);
 
-        Song song2 = new Song();
+        Song song2 = new Song("2:00","fe","fe amor", "3:00");
         songsMemStorage.add(song2);
     }
 
@@ -34,5 +35,6 @@ public class SongMemLocalDataSource {
 
         return instance;
     }
+
 
 }
