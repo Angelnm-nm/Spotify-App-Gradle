@@ -7,11 +7,12 @@ public class Song {
     private String author;
     private String duration;
 
-    public Song() {
-        this.id = id;
-        this.title = title;
-        this.author = author;
+
+    public Song(String duration, String author, String title, String id) {
         this.duration = duration;
+        this.author = author;
+        this.title = title;
+        this.id = id;
     }
 
     public String getId() {
