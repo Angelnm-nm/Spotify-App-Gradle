@@ -7,6 +7,9 @@ import java.util.ArrayList;
 
 public class SongDataRepository implements SongRepository {
 
+    public SongDataRepository(SongMemLocalDataSource songMemLocalDataSource) {
+    }
+
     @Override
     public ArrayList<Song> findAll() {
         Song song1 = new Song();
@@ -26,6 +29,11 @@ public class SongDataRepository implements SongRepository {
         songs.add(song2);
 
         return songs;
+    }
+
+    @Override
+    public ArrayList<Song> getSongs() {
+        return null;
     }
 
 }

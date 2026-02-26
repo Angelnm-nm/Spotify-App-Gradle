@@ -6,4 +6,5 @@ public interface SongRepository {
 
     public ArrayList<Song> findAll();
 
+    ArrayList<Song> getSongs();
 }
