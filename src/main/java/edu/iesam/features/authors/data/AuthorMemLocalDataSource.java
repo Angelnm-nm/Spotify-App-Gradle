@@ -6,7 +6,7 @@ import edu.iesam.features.songs.data.SongMemLocalDataSource;
 import java.util.ArrayList;
 
 public class AuthorMemLocalDataSource {
-    private static SongMemLocalDataSource instance = null;
+    private static AuthorMemLocalDataSource instance = null;
 
     private ArrayList<Author> authorsMemStorage = new ArrayList<>();
 
@@ -28,9 +28,9 @@ public class AuthorMemLocalDataSource {
     public void save(Author author) {
         authorsMemStorage.add(author);
     }
-    public static SongMemLocalDataSource newInstance(){
+    public static AuthorMemLocalDataSource newInstance(){
         if (instance == null){
-            instance = new SongMemLocalDataSource();
+            instance = new AuthorMemLocalDataSource();
         }
 
         return instance;
