@@ -20,13 +20,6 @@ public class AlbumDataRepository implements AlbumRepository {
 
     @Override
     public void saveAlbum(Album album) {
-        albumMemLocalDataSource.saveAlbum(album);
-
-    }
-
-    @Override
-    public void deleteAlbum(Album album) {
-        albumMemLocalDataSource.deleteAlbum(album);
 
     }
 

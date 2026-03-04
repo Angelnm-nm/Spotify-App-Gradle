@@ -31,11 +31,5 @@ public class AlbumMemLocalDataSource {
 
         return instance;
     }
-    public void saveAlbum(Album album) {
-        albumsMemStorage.add(album);
-    }
-    public void deleteAlbum(Album album){
-        albumsMemStorage.remove(album);
-    }
 
 }

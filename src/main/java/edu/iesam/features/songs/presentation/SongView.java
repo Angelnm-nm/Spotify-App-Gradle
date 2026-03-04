@@ -3,7 +3,6 @@ package edu.iesam.features.songs.presentation;
 import edu.iesam.features.authors.data.AuthorDataRepository;
 import edu.iesam.features.authors.data.AuthorMemLocalDataSource;
 import edu.iesam.features.authors.domain.Author;
-import edu.iesam.features.authors.domain.DeleteAuthorsUseCase;
 import edu.iesam.features.authors.domain.SaveAuthorsUseCase;
 import edu.iesam.features.songs.data.SongDataRepository;
 import edu.iesam.features.songs.data.SongMemLocalDataSource;
@@ -30,9 +29,6 @@ public class SongView {
                         new SongMemLocalDataSource()));
 
         saveSongsUseCase.execute(newSong);
-    }
-    public  static void deleteAuthors() {
-        new DeleteAuthorsUseCase(new AuthorDataRepository(AuthorMemLocalDataSource.newInstance()));
     }
 }
 

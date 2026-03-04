@@ -28,9 +28,6 @@ public class SongMemLocalDataSource {
     public void save(Song song) {
         songsMemStorage.add(song);
     }
-    public  void deleteAll() {
-        songsMemStorage.clear();
-    }
     public static SongMemLocalDataSource newInstance(){
         if (instance == null){
             instance = new SongMemLocalDataSource();

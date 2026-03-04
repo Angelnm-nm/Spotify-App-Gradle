@@ -1,6 +1,5 @@
 package edu.iesam.features.authors.data;
 
-import edu.iesam.features.albums.domain.Album;
 import edu.iesam.features.authors.domain.Author;
 import edu.iesam.features.authors.domain.AuthorRepository;
 
@@ -21,11 +20,6 @@ public class AuthorDataRepository implements AuthorRepository {
     @Override
     public void saveAuthor(Author author) {
         authorMemLocalDataSource.save(author);
-    }
-
-    @Override
-    public void deleteAuthor(Album album) {
-
     }
 
 }
