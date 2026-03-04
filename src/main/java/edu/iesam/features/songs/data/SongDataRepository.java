@@ -24,4 +24,9 @@ public class SongDataRepository implements SongRepository {
 
     }
 
+    @Override
+    public void deleteSong(Song song) {
+
+    }
+
 }

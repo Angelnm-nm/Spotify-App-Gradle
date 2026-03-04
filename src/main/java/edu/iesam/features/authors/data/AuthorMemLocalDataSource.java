@@ -28,6 +28,9 @@ public class AuthorMemLocalDataSource {
     public void save(Author author) {
         authorsMemStorage.add(author);
     }
+    public void delete() {
+        authorsMemStorage.clear();
+    }
     public static AuthorMemLocalDataSource newInstance(){
         if (instance == null){
             instance = new AuthorMemLocalDataSource();
