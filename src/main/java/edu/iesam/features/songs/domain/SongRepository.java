@@ -8,5 +8,4 @@ public interface SongRepository {
 
     ArrayList<Song> getSongs();
     public void saveSong(Song song);
-    public void deleteSong(Song song);
 }
