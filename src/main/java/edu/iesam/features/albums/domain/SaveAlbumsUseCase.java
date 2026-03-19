@@ -14,5 +14,7 @@ public class SaveAlbumsUseCase {
     public void execute(Album album) {
         albumRepository.saveAlbum(album);
     }
-
+    public void deleteAlbumUSeCAse(Album album){
+        this.albumRepository.deleteAlbum(album);
+    }
 }

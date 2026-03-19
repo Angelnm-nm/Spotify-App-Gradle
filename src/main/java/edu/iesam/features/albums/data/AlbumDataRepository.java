@@ -23,4 +23,7 @@ public class AlbumDataRepository implements AlbumRepository {
 
     }
 
+    @Override
+    public void deleteAlbum(Album album) {
+    }
 }
